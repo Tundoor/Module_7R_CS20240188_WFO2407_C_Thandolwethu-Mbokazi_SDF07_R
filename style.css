@@ -41,6 +41,8 @@ body {
     line-height: 1.6;
 }
 
+strong { font-weight: var(--fw-bold);}
+
 /* Typography */
 
 h1, 
@@ -53,3 +55,26 @@ h3 {
 h1 { font-size: var(--fs-h1);}
 h2 { font-size: var(--fs-h2);}
 h3 { font-size: var(--fs-h3);}
+
+.section_title {
+    margin-bottom: .25em;
+
+}
+
+.section_subtitle {
+    margin: 0;
+    font-size: var(--fs-h3);
+}
+
+.intro_subtitle,
+.about_subtitle {
+    background-color: var(--clr-accent);
+    font-family: var(--ff-secondary);
+}
+
+.title_intro {
+    font-weight: var(--fw-reg);
+}
+.title_intro strong {
+    display: block;
+}
