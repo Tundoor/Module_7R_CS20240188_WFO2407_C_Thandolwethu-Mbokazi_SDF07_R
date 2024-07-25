@@ -44,6 +44,7 @@ body {
     font-family: var(--ff-primmary);
     font-size: var(--fs-body);
     line-height: 1.6;
+    
 }
 
 img {
@@ -312,7 +313,55 @@ nav {display: none;}
 }
 
 
+/* footer  */
+
+.footer {
+    background: #111;
+    color: var(--clr-accent);
+    text-align: center;
+    padding: 2.5em 0;
+    font-size: var(--fs-h3);
+    margin-top: auto;
+  
+}
+
+.footer a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.footer_link {
+    font-weight: var(--fw-bold);
+}
+
+.footer_link:hover,
+.social-link:hover {
+    opacity: .7;
+ 
+}
+
+.footer_link:hover {
+    text-decoration: underline;
+}
+
+
+.socials {
+       list-style: none;
+       display: flex;
+       justify-content: center;
+       margin: 2.5em;
+       padding: 0;
+}
+
+.social_items{
+    margin: 0 .5em;
+}
+
+.social-link {
+    padding: .5em;
+}
       
+
 
 
 
