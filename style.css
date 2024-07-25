@@ -30,7 +30,7 @@
     :root {
         --fs-h1: 4.5rem;
         --fs-h2: 3.75rem;
-        --fs-h3: 1.5rem;
+        --fs-h3: 2rem;
         --fs-body: 1.125rem;
     }
     
@@ -124,7 +124,7 @@ nav {display: none;}
 
  .intro_img {
       grid-area: img;
-      max-width: 500px;
+      max-width: 400px;
       position: relative;
       z-index: 2;
  }
@@ -138,3 +138,43 @@ nav {display: none;}
     left: -2em;
     width: calc(100%+1.5em);
  }
+
+/* What I do section  */
+
+.services {
+    background-color: var(--clr-dark);
+    background-image: url(./images/services-bg.jpg);
+    background-size: cover;
+    /* background-blend-mode: soft-light;  added this to make image darker */
+    color: var(--clr-light);
+    text-align: center;
+}
+
+.title_services {
+    color: var(--clr-accent);
+    position: relative;
+}
+
+.title_services::after {
+    content: '';
+    display: block;
+    width: 25%;
+    height: 1px;
+    margin: 0.5rem auto 1em;
+    background-color: var(--clr-light);
+    opacity: 0,5;
+}
+
+@media (min-width: 800px){ 
+    .services_paraagraph {
+        display: flex;
+        max-width: auto;
+        margin: 0 auto;
+    }
+
+    .services_paraagraph + .services_paraagraph{
+        margin: 2em;
+    }
+
+}
+
