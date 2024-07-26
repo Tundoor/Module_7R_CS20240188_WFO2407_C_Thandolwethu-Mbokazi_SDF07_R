@@ -242,37 +242,38 @@ h3 { font-size: var(--fs-h3);}
         display: grid;
         width: min-content;
         margin: 0 auto;
-        grid-column-gap: 2em;
+        grid-column-gap: 1em;
          grid-template-areas:
            "img title"
            "img subtitle";
         grid-template-columns: min-content max-content;
     }
-}
 
- .intro_img {
+
+ .intro__img {
       grid-area: img;
       max-width: 250px;
       position: relative;
       z-index: 2;
  }
 
- .intro_subtitle {
+ .section__subtitle--intro {
     align-self: start;
     grid-column: -1/1;
     grid-row: 2;
     text-align: right;
     position: relative;
-    left: -2em;
-    width: calc(100%+1.5em);
+    left: -1.5em;
+    width: calc(100% + 1.5em);
  }
+}
 
 
 /* What I do section  */
 
-.services {
+.my-services {
     background-color: var(--clr-dark);
-    background-image: url(./images/services-bg.jpg);
+    background-image: url(../images/services-bg.jpg);
     background-size: cover;
      background-blend-mode: soft-light;  /*added this to make image darker */
     color: var(--clr-light);
@@ -280,31 +281,32 @@ h3 { font-size: var(--fs-h3);}
 }
 
 
-.title_services {
+.section__title--services {
     color: var(--clr-accent);
     position: relative;
 }
 
-.title_services::after {
+.section__title--services::after {
     content: '';
     display: block;
     width: 2em;
     height: 1px;
     margin: 0.5rem auto 1em;
-    background-color: var(--clr-light);
+    background-color: var(--clr-dark);
     opacity: 0.25;
 }
 
-.service_paragraph {
+.services {
     margin-bottom: 4em;
 }
 
 .service {
     max-width: 500px;
-    margin: 0 auto;}
+    margin: 0 auto;
+}
 
 @media (min-width: 800px){ 
-    .service_paragraph {
+    .services {
         display: flex;
         max-width: 1000px;
         margin-left: auto;
@@ -315,7 +317,9 @@ h3 { font-size: var(--fs-h3);}
     .service + .service{
         margin-left: 2em;
     }
+
 }
+
 
 
 /* about me  */
@@ -325,7 +329,7 @@ h3 { font-size: var(--fs-h3);}
     margin: 0 auto;
 }
 
-.about-me_img {
+.about-me__img {
     box-shadow: var(--bs);
 }
 
@@ -342,11 +346,11 @@ h3 { font-size: var(--fs-h3);}
 
 
  
-.title_about {
+.section__title--about {
     grid-area: title;
 }
 
-.about_subtitle {
+.section__subtitle--about {
     grid-column: 1/-1;
     grid-row: 2;
     position: relative;
@@ -356,11 +360,11 @@ h3 { font-size: var(--fs-h3);}
     padding-right: calc(200px +4em);
 }
 
-.about-me_img {
+.about-me__img {
     grid-area: img;
     position: relative;
     z-index: 2;
-    object-fit:contain;
+    object-fit:contain;         /*added to make sure my pictures fit.*/
   }
 }
 
@@ -380,12 +384,12 @@ h3 { font-size: var(--fs-h3);}
      
 }
 
-.portfolio_item {
+.portfolio__item {
     background: var(--clr-accent);
     overflow: hidden;
 }
 
-.portfolio_img {
+.portfolio__img {
     transition: 
           transform 750ms cubic-bezier(.5, 0, .5, 1),
           opacity 250ms linear;
@@ -398,13 +402,13 @@ h3 { font-size: var(--fs-h3);}
     object-position: left;
 }
 
-.portfolio_item:focus {
+.portfolio__item:focus {
     position: relative;
     z-index: 2;
 }
 
-.portfolio_img:hover,
-.portfolio_item:focus .portfolio_img {
+.portfolio__img:hover,
+.portfolio__item:focus .portfolio_img {
     transform: scale(1.2);
     opacity: .5;
 }
@@ -428,22 +432,22 @@ h3 { font-size: var(--fs-h3);}
     text-decoration: none;
 }
 
-.footer_link {
+.footer__link {
     font-weight: var(--fw-bold);
 }
 
-.footer_link:hover,
-.social-link:hover {
+.footer__link:hover,
+.social-list__link:hover {
     opacity: .7;
  
 }
 
-.footer_link:hover {
+.footer__link:hover {
     text-decoration: underline;
 }
 
 
-.socials {
+.social-list {
        list-style: none;
        display: flex;
        justify-content: center;
@@ -451,11 +455,11 @@ h3 { font-size: var(--fs-h3);}
        padding: 0;
 }
 
-.social_items{
+.social-list__item{
     margin: 0 .5em;
 }
 
-.social-link {
+.social-list__link {
     padding: .5em;
 }
       
