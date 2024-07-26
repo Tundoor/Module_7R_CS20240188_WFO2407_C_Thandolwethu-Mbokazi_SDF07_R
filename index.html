@@ -11,7 +11,7 @@
 
     </head>
     <body>
-        <header>
+        <header class="header">
             <div class="logo">
                 <img src="" alt="">   <!--Ask About this logo tomorrow-->
             </div>
@@ -19,27 +19,27 @@
                 <span class="hamburger"></span>
             </button>
             <nav class="nav">     <!--Navigation Section-->
-                <ul class="nav_list">
-                    <li class="nav_item"><a href="#home" class="nav_link">Home</a></li>
-                    <li class="nav_item"><a href="#services" class="nav_link">My Services</a></li>
-                    <li class="nav_item"><a href="#about" class="nav_link">About Me</a></li>
-                    <li class="nav_item"><a href="#work" class="nav_link">My Work</a></li>
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
                 </ul>
             </nav>
         </header>
         <!--Introduction-->
         <section class="intro" id="home">
-            <h1 class="section_title title_intro">
+            <h1 class="section__title section__title--intro">
                 Hi, I am <strong>Thandolwethu Mbokazi</strong>
             </h1>
-            <p class="section_subtitle intro_subtitle"> Front-end developer</p>
-             <img src="./images/Profile Picture.jpg" alt="Picture of Thandolwethu Mbokazi smiling at camera." class="intro_img">
+            <p class="section__subtitle section__subtitle--intro"> Front-end developer</p>
+             <img src="./images/Profile Picture.jpg" alt="Picture of Thandolwethu Mbokazi smiling at camera." class="intro__img">
         </section>
         
         <!--My services-->
         <section class="services" id="services">
-            <h2 class="section_title title_services"> What I do</h2>
-            <div class="services_paragraph">
+            <h2 class="section__title section__title--services"> What I do</h2>
+            <div class="services">
                 <div class="service">      <!--First service paragraph-->
                     <h3>HTML 5</h3>
                     <p>I am well versed in HTML and am able to create websites using the language. I also have an understanding of
@@ -64,10 +64,10 @@
         
 
         <!--About me-->
-        <section class="about-me">
-            <h2 class="section_title title_about" id="about">Who I Am</h2>
-            <p class="section_subtitle about_subtitle">Aspiring front-end developer</p>
-            <div class="about-me_body">
+        <section class="about-me" id="about">
+            <h2 class="section__title section__title--about" id="about">Who I Am</h2>
+            <p class="section__subtitle section__subtitle--about">Aspiring front-end developer</p>
+            <div class="about-me__body">
             <p>I am a 19 year old girl who lives out in sunny Durban. I am an aspiring front-end devveloper and am currently working towards that goal,
                 with the help of CodeSpace Academy. I have many hobbies which I enjoy such as baking, gaming and one of my latest one's coding.
             </p>
@@ -76,25 +76,29 @@
                 exactly programmers do and am very proud of my progress. 
             </p>
         </div>
-        <img src="./images/profile pic 2.jpg" alt="greyscale image of Thandolwethu smiling at camera" class="about-me_img">
+
+        <img src="./images/profile pic 2.jpg" alt="greyscale image of Thandolwethu smiling at camera" class="about-me__img">
         </section>
 
         <!--My work--> 
         <section class="my-work" id="work">
-                <h2 class="section_title title_work">My work</h2>
-                <p class="section_subtitle work_subtitle"></p>
+                <h2 class="section__title section__title--work">My work</h2>
+                <p class="section__subtitle section__subtitle--work"> A selection of my work</p>
             <div class="portfolio">
-                <a href="https://github.com/Tundoor/Module_2R_CS20240188_WFO2407_C_Thandolwethu-Mbokazi_SDF02_R" class="portfolio_item">    <!--Portfolio item 01-->
-                    <img src="./images/portfolio-01.png"  alt=""  class="portfolio_img">
+                <!--Portfolio item 1-->
+                <a href="https://github.com/Tundoor/Module_2R_CS20240188_WFO2407_C_Thandolwethu-Mbokazi_SDF02_R" class="portfolio_item" target="_blank">    <!--Portfolio item 01-->
+                    <img src="./images/portfolio-01.png"  alt=""  class="portfolio__img">
                 </a>
+                <!--Portfolio item -->
             <div class="portfolio">
-                <a href="https://github.com/Tundoor/Module_3R_CS20240188_WFO2407_C_Thandolwethu-Mbokazi_SDF03_R" class="portfolio_item">    <!--Portfolio item 02-->
-                    <img src="./images/portfolio-03.png"  alt=""  class="portfolio_img img02">
+                <a href="https://github.com/Tundoor/Module_3R_CS20240188_WFO2407_C_Thandolwethu-Mbokazi_SDF03_R" class="portfolio_item" target="_blank">    <!--Portfolio item 02-->
+                    <img src="./images/portfolio-03.png"  alt=""  class="portfolio__img img02">
                 </a>
             </div>
+              <!--Portfolio item 3-->
             <div class="portfolio">
-                <a href="https://github.com/Tundoor/Module_6R_CS20240188__WFO2407_C_Thandolwethu-Mbokazi_SDF05R" class="portfolio_item">    <!--Portfolio item 03-->
-                    <img src="./images/portfolio-05.png"  alt=""  class="portfolio_img">
+                <a href="https://github.com/Tundoor/Module_6R_CS20240188__WFO2407_C_Thandolwethu-Mbokazi_SDF05R" class="portfolio_item" target="_blank">    <!--Portfolio item 03-->
+                    <img src="./images/portfolio-05.png"  alt=""  class="portfolio__img">
                 </a>
             </div>
         
@@ -103,13 +107,16 @@
 
     <!--Footer-->
     <footer class="footer">
+        <!--email address-->
         <a href="thandwem045@gmail.com" class="footer_link" target="_blank">thandwem045@gmail.com</a>
-        <ul class="socials">
-            <li class="social_items">
-                <a class="social-link" href="https://github.com/Tundoor" target="_blank">
+        <ul class="social-list">
+            <!--github-->
+            <li class="social-list__item">
+                <a class="social-list_link" href="https://github.com/Tundoor" target="_blank">
                     <i class="fab fa-github"></i></a></li>
-            <li class="social_items">
-                <a class="social-link" href="https://codepen.io/Thandolwethu-Mbokazi"  target="_blank">
+                    <!--codepen-->
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://codepen.io/Thandolwethu-Mbokazi"  target="_blank">
                     <i class="fab fa-codepen"></i></a></li>
         </ul>
     </footer> 
