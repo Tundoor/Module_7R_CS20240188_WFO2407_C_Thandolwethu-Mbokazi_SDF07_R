@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Thando's Portfolio Website</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+        <header class="header">
+            <div class="logo">
+                <img src="./images/Thando.png" alt="Logo that reads">   <!--Ask About this logo tomorrow-->
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">     <!--Navigation Section-->
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="index.html#services" class="nav__link">My Services</a></li>
+                    <li class="nav__item"><a href="index.html#about" class="nav__link">About Me</a></li>
+                    <li class="nav__item"><a href="index.html#work" class="nav__link">My Work</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!--Introduction-->
+        <section class="intro" id="home">
+            <h1 class="section__title section__title--intro">
+             My<strong> Projects.</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro"> Front-end developer</p>
+             <img src="./images/portfolio-01.png" alt="Picture of Thandolwethu Mbokazi smiling at camera." class="intro__img">
+        </section>
+        
+        <div class="portfolio-item-individual">
+              <p>This was one of my first challenges with CodeSpace. We had to change the profile photo
+                and add links so you can go to the different sites when they are clicked.
+              </p>
+              <img src="./images/portfolio-01.png">
+              <p><em>Picture of Simple Portfolio</em></p>
+        </div>
+        <div class="portfolio-item-individual">
+            <p>This was another portfolio piece we did but this time for CodeSpace Cat. This challenge I had
+                quite a bit of challenges with but I liked it alot since it helped me grasp the basics of HTML. I think it was absolutely paw-some.
+            </p>
+                <img src="./images/portfolio-03.png">
+                <p><em>Picture of Catfolio</em></p>
+        </div>
+        <div class="portfolio-item-individual">
+            <p>The project here was to make a petstagram. This helped me understand more on grid and flex and was really helpful in my development.
+            </p>
+                <img src="./images/portfolio-05.png">
+                <p><em>Picture of Petstagram</em></p>
+        </div>
+
+
+
+
+
+
+
+
+
+    <!--Footer-->
+    <footer class="footer">
+        <!--email address-->
+        <a href="thandwem045@gmail.com" class="footer_link" target="_blank">thandwem045@gmail.com</a>
+        <ul class="social-list">
+            <!--github-->
+            <li class="social-list__item">
+                <a class="social-list_link" href="https://github.com/Tundoor" target="_blank">
+                    <i class="fab fa-github"></i></a></li>
+                    <!--codepen-->
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://codepen.io/Thandolwethu-Mbokazi"  target="_blank">
+                    <i class="fab fa-codepen"></i></a></li>
+        </ul>
+    </footer> 
+
+    <script src="index.js"></script>
+    </body>
+</html>
