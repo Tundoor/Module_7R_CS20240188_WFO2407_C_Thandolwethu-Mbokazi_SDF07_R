@@ -28,7 +28,7 @@
 
 @media (min-width: 800px) {                        
     :root {
-        --fs-h1: 4rem;
+        --fs-h1: 4rem;                          /*Changed values */
         --fs-h2: 3rem;
         --fs-h3: 1rem;
         --fs-body: 0.9rem;
@@ -45,7 +45,7 @@ html {
 }
 
 body {
-    display: flex;                     /*added to try maker footer stick */
+    display: flex;                     /*added to try make footer stick */
     flex-direction: column;
     min-height: 100vh;
     background: var(--clr-light);
@@ -336,7 +336,7 @@ h3 { font-size: var(--fs-h3);}
     margin: 0 auto;
 }
 
-@media (min-width: 800px){ 
+@media (min-width: 800px){  /*Added this media query */
     .services {
         display: flex;
         max-width: 1000px;
@@ -388,7 +388,7 @@ h3 { font-size: var(--fs-h3);}
     left: -1em;
     width: calc(100%+3em);
     padding-left: 1em;
-    padding-right: calc(200px +4em);
+    padding-right: calc(200px +4em);      /*Changed some values here*/
 }
 
 .about-me__img {
@@ -412,7 +412,7 @@ h3 { font-size: var(--fs-h3);}
 .portfolio{
      display: grid;
      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-     grid-column-gap: 1em; /*i'm not sure why I added this */
+     grid-column-gap: 1em; 
      
 }
 
@@ -458,6 +458,7 @@ h3 { font-size: var(--fs-h3);}
 
 footer {
     margin-top: auto;
+    margin-bottom: -100%;
 }
 
 .footer a {
