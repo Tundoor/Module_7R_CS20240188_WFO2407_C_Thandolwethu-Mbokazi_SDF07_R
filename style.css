@@ -332,8 +332,9 @@ h3 { font-size: var(--fs-h3);}
 }
 
 .service {
-    max-width: 500px;
+    max-width: 200px;
     margin: 0 auto;
+    
 }
 
 @media (min-width: 800px){  /*Added this media query */
